@@ -140,11 +140,14 @@ def run_calculator():
                 print(f"dy/dx = {a*n}x + {b}")
             else:
                 print(f"dy/dx = {a*n}x^{n-1} + {b}")
-            print(f"\ndy/dx = {differentiate(x, n, a, b, c)}")
+            print(f"\ndy/dx = {differentiate(x, n, a, b, c)}, at x = {x}")
                      
         else:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            if 1 <= int(choice) <= 10:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+            else:
+                print("Invalid input! Choose from the given options.") 
                 
     except ValueError:
         print("Invalid input! Please enter numeric values.")
