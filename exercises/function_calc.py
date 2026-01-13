@@ -25,7 +25,7 @@ def divide(x, y):
             
 def find_square_root(n):
     square_root = pow(n, 0.5)
-    return  f"The {n} is {square_root}."        
+    return  f"The square root of {n} is: {square_root}."        
 
 def solve_quadratic(a, b, c):
     discriminant = b**2 - 4*a*c

@@ -2,7 +2,7 @@
 import random
 
 def play():
-   print("Hello, welcome to the Dice Roller Game")
+   print("Hello, welcome to the Dice Roller Game!")
    user = input("Enter your name: ")
    computer = "Roblox"
    print(f"\nHello {user}, you'll be playing against {computer}.")
@@ -59,14 +59,13 @@ def roll(user, computer):
    result[1]["score"] = computer_score
    
    if user_score > computer_score:
-      print(f"\n{user} wins!")
+      print(f"\n{user} wins!\nYou're a damn beast.")
    elif user_score == computer_score:
       print(f"\nIt's a tie!")
    else:
-      print(f"\n{computer} wins!") 
+      print(f"\n{computer} wins! \nYou just got defeated.") 
       
    return result
-
 
 if __name__ == "__main__":
    play()
