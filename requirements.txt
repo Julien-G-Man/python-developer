@@ -37,3 +37,6 @@ urllib3==2.5.0
 yarl==1.22.0
 uvicorn-0.40.0
 fastapi-0.128.0
+seaborn
+mayplotlib
+beautifulsoup4
