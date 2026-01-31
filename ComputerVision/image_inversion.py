@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load image
-img = Image.open("images/pascal.jpg")
+img = Image.open("images/.jpg")
 
 # Convert to NumPy array
 img_array = np.array(img)
@@ -20,7 +20,7 @@ inverted_img = 225 - img_array
 print("\nInverted image: \n", inverted_img)
 
 inverted_pil = Image.fromarray(inverted_img)
-inverted_pil.save("images/inverted_image.jpg")
+inverted_pil.save("images/quote.jpg")
 
 plt.figure(figsize=(10, 5))
 
@@ -30,7 +30,7 @@ plt.imshow(img_array)
 plt.axis("off")
 
 plt.subplot(1, 2, 2)
-plt.title("Inverted")
+plt.title("Colour Inverted")
 plt.imshow(inverted_img)
 plt.axis("off")
 

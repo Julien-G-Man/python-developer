@@ -56,7 +56,7 @@ def scaling_matrix(sx, sy):
 # image center:
 cx = W / 2
 cy = H / 2
-theta = 180 # 180°
+theta = 135 # 180°
 
 # Translate → rotate → translate back:
 T1 = translation_matrix(-cx, -cy)
@@ -98,7 +98,7 @@ plt.imshow(img_arr)
 plt.axis("off")
 
 plt.subplot(1, 2, 2)
-plt.title("Transformed")
+plt.title(f"Transformed (Rotated by {theta}°)")
 plt.imshow(output)
 plt.axis("off")
 
