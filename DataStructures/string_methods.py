@@ -13,3 +13,14 @@ print(sentence.split('name'))
 print(f"Upper case: {sentence.upper()}")
 print(f"Lower case: {sentence.lower()}")
 print(f"Sentence case: {sentence.capitalize()}")
+
+students = ["Julien", "Derick", "Derick", "Paul"]
+
+print(students)
+st = "Derick"
+
+# Loop through and delete every occurence of "Derick"
+while st in students:
+    students.remove(st)
+    
+print(students)        
