@@ -7,7 +7,7 @@ import requests
 
 headers = {"authorization": "api_key"}
 
-# upload audio file
+# upload audio file 
 upload_response = requests.post(
     'https://assemblyai.com/v2/upload',
     headers=headers,
