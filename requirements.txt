@@ -44,3 +44,9 @@ face-recognition
 opencv-python
 scikit-learn
 joblib
+pypdf
+langchain
+langchain-ollama
+langchain-chroma
+langchain-community
+ipykernel
