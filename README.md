@@ -1,4 +1,4 @@
-## My Python Tutorials
+## Python Practice
 
 Collection of Python experiments, mini‑projects, and learning snippets I’ve written while practicing different areas of Python: core language features, data structures and algorithms, web frameworks, machine learning, computer vision, and modern LLM / RAG workflows.
 
