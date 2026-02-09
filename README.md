@@ -1,44 +1,89 @@
-## Python Practice
+## 🐍 Python Practice
 
 Collection of Python experiments, mini‑projects, and learning snippets I’ve written while practicing different areas of Python: core language features, data structures and algorithms, web frameworks, machine learning, computer vision, and modern LLM / RAG workflows.
 
 This repo is meant to be a **playground** and **reference**: you can open any folder, run the script(s), and learn from small, focused examples.
 
-### Repository layout
+### 📁 Project structure
 
-- **`data-structures/`**: Python fundamentals and classic data‑structure patterns.
-  - Lists, tuples, sets, dictionaries, string methods, loops, file I/O, lambda functions, try/except, queues and stacks, insertion sort, merging and sorting utilities, and more.
-- **`exercises/`**: Short coding challenges and practice problems.
-  - Number games (even/odd, guessing, Fibonacci, palindromes, pass/fail), list and dict manipulation, random generators, simple simulations (dice, rock–paper–scissors), basic algorithms (frequency counts, filters), and more.
-- **`oop/`**: Object‑oriented programming in Python.
-  - Classes and objects, constructors and destructors, inheritance and polymorphism, encapsulation, access modifiers, static and class methods, and small domain examples like digital payments and banking.
-- **`computer-vision/`**: Intro to computer vision with `opencv-python` and `face-recognition`.
-  - Simple image operations (rotation, inversion), matrix operations, face detection and recognition using example images under `computer-vision/images/`.
-- **`libraries/`**: How to use popular Python libraries.
-  - `numpy`, `pandas`, `matplotlib.pyplot`, `seaborn`, `requests`, and `beautifulsoup4` examples for numerical computing, data analysis, plotting, HTTP calls, and HTML parsing.
-- **`llm-apis/`**: Examples of calling AI / LLM related APIs.
-  - Small scripts showing how to interact with services like OpenAI, AssemblyAI, Clarifai (and a Vercel API gateway), plus a note on counting tokens.
-- **`frameworks/`**: Web framework examples.
-  - **`fastapi-dir/`**: A tiny FastAPI app with a health‑check endpoint and a users endpoint (`/health`, `/users`) plus a `User` model in `models.py`.
-  - **`django-projects/dictionary_project/`**: A Django project scaffold for a simple dictionary‑style app (`dictionary_app`) demonstrating views, models, and standard Django layout.
-- **`machine-learning/`**
-  - **`fastapi-ml-skeleton/`**: A small ML project skeleton.
-    - `data/data.csv` – sample dataset.
-    - `models/my_model.joblib` – pre‑trained model artifact.
-    - `src/train.py` – training logic for creating the model.
-    - `src/main.py` – FastAPI app exposing a `/predict` endpoint using Pydantic models.
-    - `run.py` – helper script to launch Uvicorn (`main:app`).
-- **`rag/`**
-  - **`rag-app-main/`**: A tiny RAG demo cloned from `https://github.com/nileshhadalgi016/rag-app`.
-    - `main.ipynb` – loads a PDF (e.g. `Think-And-Grow-Rich_2011-06.pdf`), chunks text, builds embeddings with LangChain + Ollama, stores in a vector store, and lets you query it.
-    - `flow.tldr` – short notes about the RAG flow.
-- **`leetcode/`**: A few problem‑style solutions (e.g. merging strings, making a string valid with minimal additions).
-- **`random_trials/`**: Miscellaneous experiments and CLI toys.
-  - Small utilities like calculators, password strength checker, factorials, recursion demos, GCD, inventory check, student management, substring/substring length logic, simple stats, and more.
-- **`files/`**: Example CSV data sets (`finance_data.csv`, `wine_data.csv`) used by some scripts.
-- **`rag-app-main/main.ipynb`**, sub‑READMEs, and other notebooks/scripts: additional, more focused demos inside individual subfolders (for example under `machine-learning/fastapi-ml-skeleton/` and `rag/rag-app-main/`).
+```text
+python-practice/
+├── README.md                         # This file – repo overview & guide
+├── requirements.txt                  # Shared Python dependencies
+├── .gitignore                        # Git ignore rules
+├── data-structures/                  # Python fundamentals & data-structure patterns
+│   ├── Insertion Sort.py
+│   ├── queues_and_stacks.py
+│   ├── Dictionaries.py
+│   └── ...                           # lists, tuples, sets, I/O, lambdas, try/except, etc.
+├── exercises/                        # Short coding challenges & practice problems
+│   ├── number_guessing.py
+│   ├── fibonacci_numbers.py
+│   ├── rock_paper_scissors.py
+│   └── ...                           # list/dict practice, filters, random utilities, etc.
+├── oop/                              # Object-oriented programming examples
+│   ├── classes_and_objects.py
+│   ├── inheritance.py
+│   ├── polymorphism.py
+│   └── ...                           # constructors, destructors, encapsulation, payments, etc.
+├── computer-vision/                  # OpenCV & face-recognition demos
+│   ├── face_detection.py
+│   ├── face_recognition.py
+│   ├── image_inversion.py
+│   ├── image_rotation.py
+│   └── images/                       # sample images used by the scripts
+├── libraries/                        # Popular Python library usage
+│   ├── numpy_lib.py
+│   ├── pandas_lib.py
+│   ├── matplotlib-pyplot.py
+│   ├── seaborn_lib.py
+│   ├── requests_lib.py
+│   └── beautiful_soup.py
+├── llm-apis/                         # AI / LLM and external API examples
+│   ├── openai-api.py
+│   ├── assemblyai-api.py
+│   ├── clarifyai_apy.py
+│   ├── vercel_api_gateway.py
+│   └── how_to_count_tokens.py
+├── frameworks/                       # Web framework projects
+│   ├── fastapi-dir/                  # Minimal FastAPI app (health & users endpoints)
+│   │   ├── main.py
+│   │   └── models.py
+│   └── django-projects/
+│       └── dictionary_project/       # Simple Django dictionary-style project
+│           ├── dictionary_app/
+│           ├── dictionary_project/
+│           └── manage.py
+├── machine-learning/
+│   └── fastapi-ml-skeleton/         # ML project skeleton served via FastAPI
+│       ├── data/data.csv            # example dataset
+│       ├── models/my_model.joblib   # trained model artifact
+│       ├── src/
+│       │   ├── train.py             # training logic
+│       │   └── main.py              # FastAPI app with /predict endpoint
+│       ├── run.py                   # uvicorn entry point
+│       └── README.md
+├── rag/
+│   └── rag-app-main/                # RAG demo (cloned from nileshhadalgi016/rag-app)
+│       ├── main.ipynb               # PDF → chunks → embeddings → vector store → Q&A
+│       ├── flow.tldr
+│       └── Think-And-Grow-Rich_2011-06.pdf
+├── leetcode/                        # Small LeetCode-style solutions
+│   ├── merge_strings.py
+│   └── mimimum_additions_to_make_valid_string.py
+├── random_trials/                   # Miscellaneous experiments & CLI mini-projects
+│   ├── basic_calculator.py
+│   ├── password_strength_checker.py
+│   ├── my_banking_system.py
+│   ├── student_management.py
+│   └── ...                          
+├── files/                           # Example CSV datasets
+│   ├── finance_data.csv
+│   └── wine_data.csv
+└── rag/..., sub-READMEs, notebooks  # Extra focused demos inside subfolders
+```
 
-### Getting started
+### 🚀 Getting started
 
 - **Prerequisites**
   - Python **3.10+** installed.
@@ -64,7 +109,7 @@ pip install -r requirements.txt
 
 > **Note**: Some folders (like `rag/rag-app-main/` or `machine-learning/fastapi-ml-skeleton/`) may have their own extra dependencies or specific version recommendations. Check their local `README.md` files or script comments if something fails to import.
 
-### Running selected projects
+### 🧪 Running selected projects
 
 - **Python basics, data structures, OOP, and exercises**
   - Most scripts in `data-structures/`, `oop/`, `exercises/`, and `random_trials/` can be run directly:
@@ -140,7 +185,7 @@ jupyter lab  # or: jupyter notebook
 
   - Open `main.ipynb` from Jupyter and run through the cells.
 
-### LLM / external API examples
+### 🤖 LLM / external API examples
 
 - The scripts under `llm-apis/` show how to:
   - Call **OpenAI** models via the `openai` Python client.
@@ -148,7 +193,7 @@ jupyter lab  # or: jupyter notebook
   - Talk to **Clarifai** and a **Vercel**-hosted API gateway.
 - For these examples you will typically need API keys set as environment variables or in a `.env` file (see script comments for the expected variable names). **Do not commit your keys** to version control.
 
-### How to use this repo for learning
+### 📚 How to use this repo for learning
 
 - **Pick a topic folder** that matches what you want to learn (e.g. `data-structures/`, `oop/`, `computer-vision/`, `libraries/`, `llm-apis/`, `machine-learning/`).
 - **Open scripts in your editor**, read through them, and run them from the terminal.
