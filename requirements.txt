@@ -50,3 +50,6 @@ langchain-ollama
 langchain-chroma
 langchain-community
 ipykernel
+flask
+flask-sqlalchemy
+flask-migrate

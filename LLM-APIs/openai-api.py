@@ -14,7 +14,7 @@ def call_openai(user_input):
             input = user_input
         )
         result = response.output_text
-        print(result)
+        
         return result
     except Exception as e:
         print(f"Error calling OpenAI API: {e}")
