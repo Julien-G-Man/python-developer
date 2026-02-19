@@ -41,16 +41,19 @@ def get_a_drink(id):
 @app.post('/drinks/<int:id>')
 def add_drink():
     data = request.json
+    name = data['name']
+    description = data['description']
     
-    drink = Drink.query.filter_by(name=data['name']).first()
+    drink = Drink.query.filter_by(name=name).first()
     if drink:
-        return {"message": f"drink already exists"}, 400
+        return {"message": f"drink {data['name']} already exists"}, 400
     
     try:     
-        new_drink = Drink(name=data['name'], description=data['description'])
+        new_drink = Drink(name=name, description=description)
         db.session.add(new_drink)
         db.session.commit()
-        return {'id': new_drink.id}, 201
+        return {"message": f"New drink {name} created", 'id': new_drink.id}, 201
+    
     except Exception as e:
         db.session.rollback()
         return {"error": str(e)}, 500

@@ -53,3 +53,6 @@ ipykernel
 flask
 flask-sqlalchemy
 flask-migrate
+sqlalchemy
+asyncpg
+psycopg2-binary
