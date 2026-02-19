@@ -20,4 +20,6 @@ matB = np.array([
     [0, 0, -0]
 ]) 
 
-print(f"Is matrix A idempotent: {isIdempotent(matA, matB)}")
+if __name__ == "__main__":
+    is_idempotent = isIdempotent(matA, matB)
+    print(f"Is matrix A idempotent: {is_idempotent}")

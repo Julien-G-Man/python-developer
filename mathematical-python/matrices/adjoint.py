@@ -5,7 +5,7 @@ matA = np.array([
     [3, 4]
 ])
 
-def adjoint_of_2by2(matrix2by2):
+def adjoint_of_2x2(matrix2by2):
     a = matrix2by2[1][1]
     b = - matrix2by2[0][1]
     c = - matrix2by2[1][0]
@@ -18,5 +18,6 @@ def adjoint_of_2by2(matrix2by2):
     
     return adjoint_matrix
 
-adjointA = adjoint_of_2by2(matA)
-print(adjointA)
+if __name__ == "__main__":
+    adjointA = adjoint_of_2x2(matA)
+    print(adjointA)

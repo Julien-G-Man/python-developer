@@ -4,6 +4,7 @@ matrix = np.array([
     [4, 5, 6]
 ])
 
+# there are two ways of finding the transpose
 transpose_matrix1 = matrix.T 
 transpose_matrix2 = np.transpose(matrix) 
 
