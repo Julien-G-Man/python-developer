@@ -19,7 +19,7 @@ def call_openai(user_input):
     except Exception as e:
         print(f"Error calling OpenAI API: {e}")
 
-user_input="Hello, how are you doing?" # input("User input: ")
+user_input= input("User input: ") #"Hello, how are you doing?"  
 
 if __name__ == "__main__":
     call_openai(user_input)

@@ -33,5 +33,6 @@ class Solution:
         
         return merged_string
 
+# instantiation
 solution = Solution()
 solution.mergeAlternately("boyfriend", "girl")
