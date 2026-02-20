@@ -1,6 +1,7 @@
 import numpy as np
 from adjoint import adjoint_of_2x2
 from idempotency import isIdempotent
+from trace import trace
 
 matA = np.array([
     [2, 5],
@@ -20,3 +21,5 @@ if __name__ == "__main__":
     
     is_idempotent = isIdempotent(matA, inverse_matrixA)
     print(f"\nThe matrix is idempotent: {is_idempotent}")
+    
+    print(f"\nThe trace of matrix A is {trace(matA)}")
