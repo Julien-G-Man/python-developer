@@ -1,0 +1,1 @@
+from equations.gauss_jordan_elimination import gauss_jordan

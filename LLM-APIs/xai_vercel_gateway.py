@@ -1,13 +1,13 @@
 import os
 from openai import OpenAI
-
+ 
 client = OpenAI(
-  api_key=os.getenv('OPENAI_API_KEY'),
+  api_key=os.getenv('XAI_GATEWAY_API_KEY'),
   base_url='https://ai-gateway.vercel.sh/v1'
 )
-
+ 
 response = client.chat.completions.create(
-  model='openai/gpt-5',
+  model='xai/grok-4',
   messages=[
     {
       'role': 'user',

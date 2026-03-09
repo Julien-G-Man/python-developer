@@ -56,3 +56,4 @@ flask-migrate
 sqlalchemy
 asyncpg
 psycopg2-binary
+groq
