@@ -3,6 +3,7 @@
 Collection of Python experiments, mini‑projects, and learning snippets I’ve written while practicing different areas of Python: core language features, data structures and algorithms, web frameworks, machine learning, computer vision, and modern LLM / RAG workflows.
 
 This repo is meant to be a **playground** and **reference**: you can open any folder, run the script(s), and learn from small, focused examples.
+A lof of what you'll see here will be code I wrote during my early days of learning Python, so you'll definitely see variations cos I've been putting everything here since I began learning  seriously Python till date :)
 
 ### 📁 Project structure
 
