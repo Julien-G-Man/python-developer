@@ -1,4 +1,5 @@
 # Pivota - Digital Payments Solution
+# Not AI, it's all done by me :)
 import re
 import datetime
 from datetime import datetime
