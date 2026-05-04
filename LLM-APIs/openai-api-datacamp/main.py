@@ -7,7 +7,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI()
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def call_openai(prompt):
     try:
@@ -17,10 +17,8 @@ def call_openai(prompt):
             messages=[
                 {"role": "user", "content": prompt}
             ]
-        )
-        result = response.choices[0].message.content
-    
-        return result
+        )    
+        return response.choices[0].message.content
     except Exception as e:
         return e
 
@@ -30,8 +28,6 @@ history = []
 
 def persist_history(prompt, ai_response):
     history.append({"prompt": prompt, "ai_response": ai_response})
-    
-    return history
 
 
 if __name__ == "__main__":

@@ -46,6 +46,7 @@ scikit-learn
 joblib
 pypdf
 langchain
+langchain-openai
 langchain-ollama
 langchain-chroma
 langchain-community
@@ -58,3 +59,4 @@ asyncpg
 psycopg2-binary
 groq
 keyboard
+panel
