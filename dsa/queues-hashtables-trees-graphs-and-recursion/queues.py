@@ -32,8 +32,7 @@ class Queue:
         if self.head:
             current_node = self.head
             self.head = current_node.next
-            current_node.next = None # hmmm, the tutorial might be wrong here
-            # current not is meant to get removed, not it's next cos it's next becomes the head
+            current_node.next = None
             self.size -= 1
             
             if self.head == None:
