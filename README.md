@@ -1,9 +1,9 @@
-## 🐍 Python Practice
+## Yo Python Devs 🐍
 
 Collection of Python experiments, mini‑projects, and learning snippets I’ve written while practicing different areas of Python: core language features, data structures and algorithms, web frameworks, machine learning, computer vision, and modern LLM / RAG workflows.
 
 This repo is meant to be a **playground** and **reference**: you can open any folder, run the script(s), and learn from small, focused examples.
-A lof of what you'll see here will be code I wrote during my early days of learning Python, so you'll definitely see variations cos I've been putting everything here since I began learning  seriously Python till date :)
+A lof of what you'll see here will be code I wrote during my early days of learning Python, so you'll definitely see variations cos I've been putting everything here since I began learning   Python till date, including my first helloworld("print") :)
 
 ### 📁 Project structure
 
@@ -81,7 +81,8 @@ python-practice/
 ├── files/                           # Example CSV datasets
 │   ├── finance_data.csv
 │   └── wine_data.csv
-└── rag/..., sub-READMEs, notebooks  # Extra focused demos inside subfolders
+├── rag/..., sub-READMEs, notebooks  # Extra focused demos inside subfolders
+└── management_system/               # raw python management system - learning project to consolidate OOP understanding
 ```
 
 ### 🚀 Getting started
