@@ -1,7 +1,5 @@
 import turtle
 
-import turtle
-
 screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Turtle Spiral")
